@@ -11,39 +11,9 @@ body {
     font-family: 'Roboto'; sans-serif;
 }
 
-a {
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 135.69%;
-    letter-spacing: 0.005em;
-    color: #395996;
-    margin-bottom:11px;
-}
-
-.p1 {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: #050505;
-    width: 600px;
-    height: 72px;
-    margin-top:13px;
-    
-}
-
-.p2 {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 135.69%;
-    letter-spacing: 0.005em;
-    color: #395996;
-    margin-top:10px;
-    margin-bottom: 8px;
-}
-.container {
-    position: relative;
-    width: 640px;
-    height: 800px;
+.brain-forge-post {
+    max-width: 640px;
+    max-height: 800px;
     background: #FFFFFF;
     border-radius: 12px;
 }
@@ -52,72 +22,97 @@ header {
     padding: 20px 20px;
 }
 
-.leading {
+.wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#avatar {
-    width: 40px;
-    height: 40px;
-    margin-left: 0px;
-    margin-top: 0px;
+.logo-wrapper {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+#logo {
     border-radius: 50%;
 }
 
-.title-wrapper {
+.info-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 11px;
+    padding-left: 11px;
 }
 
-.post-title {
+.title-wrapper {
     font-weight: 600;
     color: #1E40AF;
-    font-style: normal;
     font-size: 15px;
-    line-height: 18px;
 }
 
-.post-info {
+.subtitle-wrapper {
     color: #65676B;
     font-weight: 400;
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
-    line-height: 15px;
 }
 
-.under {
-    background: #F2F3F5;
-    border: 3px solid rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    height: 76px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top:-4px;
-     /* dodanie -4px, aby under przykleił sie do zdjecia  */
+.dots-wrapper {
+    padding-right: 20px;
+}
+
+.content {
     display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.content-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #050505;
+    padding-top:13px;
     
 }
 
-.under-title {
+.content-tags {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 135.69%;
+    letter-spacing: 0.005em;
+    color: #395996;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.005em;
+    color: #395996;
+}
+
+.bottom-wrapper {
+    background: #F2F3F5;
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    margin-top:-4px;
+    display: flex;
+    padding: 17px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bottom {
     height: 18px;
-    margin-left: 20px;
-    margin-right: 463px;
-    margin-top: 16px;
     font-weight: 400;
     font-size: 13px;
     line-height: 135.69%;
-    display: flex;
-    align-items: center;
     color: #606770;
 }
 
-.under-info {
-    margin-left: 20px;
-    margin-right: 262px;
-    margin-bottom: 17px;
+.subtitle-bottom {
     font-weight: 500;
     font-size: 17px;
     line-height: 135.69%;
@@ -125,32 +120,41 @@ header {
     color: #1D2129;
 }
 
+#post-image {
+    max-width: 100%;
+}
 .button {
-    width: 142px;
-    height: 36px;
+    padding: 6px 32px 9px 26px;
     background: #EFF1F3;
-    border: 2px solid #BEC3C9;
-    box-sizing: border-box;
+    border: 2px solid #BEC3C9; 
     border-radius: 5px;
-    text-align: center;
 }
 
-.button: hover {
-    background: #DEDEDE;
+.button:hover {
+    background-color: #DEDEDE;
 }
 
 .actions {
     display: flex;
     justify-content: space-between;
-    margin-left: 90px;
-    margin-right: 84px;
-    margin-top: 20px;
-    margin-bottom: 34px;
+    padding: 15px 20px 28px 20px;
 }
-.dots {
-    width: 30px;
-    height: 6.67px;
-    margin-top: 43px;
-    margin-right: 20px;
 
+.actions-icons {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.actions-text {
+    padding: 15px;
+}
+
+.actions-icons:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
